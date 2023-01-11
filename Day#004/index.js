@@ -18,12 +18,16 @@
 //     albumTitle: "ABBA Gold",
 //   },
 // };
-
 // function updateRecords(records, id, prop, value) {
-//   if (prop !== " ") records[id][prop] = value;
+//   if (value !== "" && prop === "tracks") {
+//     if (Array.isArray(records[id][prop])) records[id][prop].push(value);
+//     else records[id][prop] = [value];
+//   } else if (value !== "" && prop === "artist") records[id][prop] = value;
+//   else if (value === "") delete records[id][prop];
+//   else records[id][prop] = value;
 //   return records;
 // }
-// updateRecords(recordCollection, 5439, "artist", "ABBA");
+// console.log(updateRecords(recordCollection, 2468, "tracks", "Free"));
 
 // Iterate with JavaScript While Loops
 // const myArray = [];
