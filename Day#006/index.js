@@ -27,19 +27,19 @@
 ];
 
 function lookUpProfile(name, prop) {
-  let res = null;
-  contacts.map((obj) => {
-    Object.entries(obj).filter((value) => {
-      if (value[0] === prop && value[1] === name) res = obj[prop];
-      else if (value[0] !== name) res = "No such contact";
-      else res = "No such property";
-    });
-  });
-  return res;
+  for (let x = 0; x < contacts.length; x++) {
+    if (contacts[x].firstName === name) {
+      if (contacts[x].hasOwnProperty(prop)) {
+        return contacts[x][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
 }
 
-console.log(lookUpProfile("Kristian", "lastName"));
- */
+console.log(lookUpProfile("Kristian", "lastNsadame")); */
 
 // Generate Random Fractions with JavaScript
 /* function randomFraction() {
