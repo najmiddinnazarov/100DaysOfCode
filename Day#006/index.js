@@ -97,3 +97,17 @@ console.log(checkSign(0)); */
   }
 }
 console.log(countdown(5)); */
+
+// Use Recursion to Create a Range of Numbers
+// function rangeOfNumbers(startNum, endNum) {
+//   if (endNum === 0) {
+//     return [];
+//   } else {
+//     const countArray = rangeOfNumbers(startNum, endNum - 1);
+//     if (startNum <= endNum) countArray.push(endNum);
+//     return countArray;
+//   }
+// }
+// console.log(rangeOfNumbers(4, 4));
+
+/* ======================= Basic Javascript Finished ======================= */
