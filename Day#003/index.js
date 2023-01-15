@@ -1,12 +1,15 @@
 // Updating Object Properties
-// const myDog = {
-//   name: "Coder",
-//   legs: 4,
-//   tails: 1,
-//   friends: ["freeCodeCamp Campers"],
+// var myDog = {
+//   "name": "Coder",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["Free Code Camp Campers"]
 // };
 
-// myDog.name = "Happy Coder";
+// // Only change code below this line.
+
+// myDog.name = "Happy Coder"; // Dot notation
+// myDog["name"] = "Happy Coder"; // Bracket notation
 
 // Add New Properties to a JavaScript Object
 // const myDog = {
