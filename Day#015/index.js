@@ -23,3 +23,5 @@ let result = str.replace(fixRegex, replaceText); */
 /* let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g;
 let result = hello.replace(wsRegex, ""); */
+
+/* ======================= Regular Expressions Finished ======================= */
