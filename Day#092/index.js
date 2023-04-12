@@ -1,20 +1,20 @@
 // 290. Word Pattern
-/* var wordPattern = function (pattern, s) {
-  const arrayString = s.split(" ");
-  const hashMapPattern = {};
-  const hashMapString = {};
-  if (pattern.length !== arrayString.length) return false;
-  for (let i = 0; i < arrayString.length; i++) {
-    if (!hashMapPattern[pattern[i]] && !hashMapString[arrayString[i]]) {
-      hashMapPattern[pattern[i]] = arrayString[i];
-    }
-    if (!hashMapString[arrayString[i]]) {
-      hashMapString[arrayString[i]] = pattern[i];
-    }
-
-    if (hashMapPattern[pattern[i]] !== arrayString[i]) return false;
+/* const wordPattern = function (pattern, s) {
+  const words = s.split(" ");
+  const patternArr = pattern.split("");
+  if (s.split(" ").length !== patternArr.length) {
+    return false;
   }
-  return true;
+  const patternRule = patternArr.reduce((acc, el, i) => {
+    if (Object.values(acc).includes(words[i])) {
+      return acc;
+    }
+    return {
+      ...acc,
+      [el]: words[i],
+    };
+  }, {});
+  return patternArr.every((el, i) => patternRule[el] === words[i]);
 };
 console.log(wordPattern("abba", "dog cat cat dog"));
  */
